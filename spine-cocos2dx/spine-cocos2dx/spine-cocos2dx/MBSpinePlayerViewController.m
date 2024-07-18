@@ -38,7 +38,7 @@
     self.spineView = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.spineView];
     
-    self.player = [[MBSpinePlayer alloc] init];
+    self.player = [MBSpinePlayer player];
 //    [self.player setSpineDebugEnable:YES];
     self.player.delegate = self;
     [self runSpine];
